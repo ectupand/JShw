@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма выбора питомца</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+<body class="body">
+<main class="main">
+    <h1 class="h1">Найди себе друга!</h1>
+
+    <!--Форму размещай тут-->
+    <form id="theForm" action="/pets/orders" method="post" class="myForm">
+        <p>
+            <label>pet type:</label>
+            <label for="Cat"></label><input id="Cat" name="petType" type="radio" value="cat" checked/>cat
+            <label for="Dog"></label><input id="Dog" name="petType" type="radio" value="dog"/>dog
+            <label for="Tiger"></label><input id="Tiger" name="petType" type="radio" value="tiger"/>tiger
+        </p>
+        <p>
+            <label>pet gender:</label>
+            <label for="boy"></label><input id="boy" name="gender" type="radio" value="boy" />boy
+            <label for="girl"></label><input id="girl" name="gender" type="radio" value="girl"/>girl
+            <label for="none"></label><input id="none" name="gender" type="radio" value="none" checked/>none
+        </p>
+        <p>
+            <label for="eyeColor">eye color:</label>
+            <input id="eyeColor" name="eyeColor" type="color" />
+        </p>
+        <p>
+            <label for="tailLength">tail length, cm:</label>
+            <input id="tailLength" name="tailLength" value="10" type="text" placeholder="Enter tail length in cm"/>
+        </p>
+        <p>
+            <label for="name">name:</label>
+            <input id="name" name="name" value="Super" type="text" placeholder="Enter your name"/>
+        </p>
+        <p>
+            <label for="dateOfBirth">date of birth:</label>
+            <input id="dateOfBirth" name="dateOfBirth" type="date" />
+        </p>
+        <p>
+            <label for="email">email:</label>
+            <input id="email" name="email" value="email@email.ru" type="email" placeholder="Enter your email"/>
+        </p>
+        <p>
+            <label for="phone">phone:</label>
+            <input id="phone" name="phone" value="+79000000000" type="text" placeholder="Enter your phone"/>
+        </p>
+        <p>
+            <label for="rules">rules?</label>
+            <input id="rules" name="rules" value="true" type="checkbox" required/>
+        </p>
+
+
+        <button id="sendFormBtn">Send Me!</button>
+        <button type="reset" id="resetBtn">Reset</button>
+    </form>
+
+
+</main>
+</body>
+</html>
